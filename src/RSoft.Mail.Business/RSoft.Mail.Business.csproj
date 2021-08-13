@@ -24,8 +24,4 @@
     <ProjectReference Include="..\RSoft.Mail.Contract\RSoft.Mail.Contract.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Infra\MongoDb\" />
-  </ItemGroup>
-
 </Project>

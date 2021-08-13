@@ -1,4 +1,6 @@
-﻿namespace RSoft.Framework.Infra.Data.MongoDb.Documents
+﻿using System;
+
+namespace RSoft.Framework.Infra.Data.MongoDb.Documents
 {
 
     /// <summary>

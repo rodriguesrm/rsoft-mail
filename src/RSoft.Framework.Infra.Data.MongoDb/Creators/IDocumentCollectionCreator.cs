@@ -12,7 +12,6 @@ namespace RSoft.Framework.Infra.Data.MongoDb.Creators
         /// <summary>
         /// Perform a create collection
         /// </summary>
-        /// <returns></returns>
 
         Task CreateCollection();
 

@@ -1,6 +1,7 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using RSoft.Framework.Infra.Data.MongoDb.Creators;
+using RSoft.Framework.Infra.Data.MongoDb.Documents;
 using RSoft.Framework.Infra.Data.MongoDb.IoC;
 using RSoft.Framework.Infra.Data.MongoDb.Options;
 using System.Collections.Generic;
@@ -45,12 +46,11 @@ namespace RSoft.Framework.Infra.Data.MongoDb.Extensions
             services.Configure<MongoDbConnectionStrings>(options => configuration.GetSection("ConnectionStrings").Bind(options));
 
             //MongoDB
-            services.AddScoped<MongoDatabaseProvider>();
-            services.AddScoped(s => s.GetService<MongoDatabaseProvider>().GetDatabase());
+            services.AddSingleton<MongoDatabaseProvider>();
+            services.AddSingleton(s => s.GetService<MongoDatabaseProvider>().GetDatabase());
 
             // DbCreator
-            services.AddScoped<IDatabaseCreator, MongoCollectionCreator>();
-            services.RegisterAllTypes<IDocumentCollectionCreator>(ServiceLifetime.Scoped, typeof(MongoCollectionCreator).Assembly);
+            services.AddSingleton<IDatabaseCreator, MongoCollectionCreator>();
 
             return services;
 

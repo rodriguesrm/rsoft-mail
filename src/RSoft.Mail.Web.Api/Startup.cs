@@ -109,6 +109,8 @@ namespace RSoft.Mail.Web.Api
                 endpoints.MapControllers();
             });
 
+            app.ApplicationServices.Migration();
+
         }
     }
 }

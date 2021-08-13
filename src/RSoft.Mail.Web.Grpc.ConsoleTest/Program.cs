@@ -10,12 +10,18 @@ using System.Web;
 
 namespace RSoft.Mail.Web.Grpc.ConsoleTest
 {
-    
+
     public class Program
     {
         public static void Main(string[] args)
         {
-            RunTest();
+
+
+            (new Creator<DateTime>()).ShowGenericType();
+
+            Console.ReadKey();
+
+            //RunTest();
         }
 
         private static void RunTest()
@@ -48,4 +54,20 @@ namespace RSoft.Mail.Web.Grpc.ConsoleTest
 
         }
     }
+
+    public class Creator<T>
+    {
+
+        public void ShowGenericType()
+        {
+
+            T gen = default(T);
+
+            Type constructed = gen.GetType();
+            Console.WriteLine(constructed);
+
+        }
+
+    }
+
 }

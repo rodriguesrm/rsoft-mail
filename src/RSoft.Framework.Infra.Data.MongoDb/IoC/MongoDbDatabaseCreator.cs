@@ -35,7 +35,7 @@ namespace RSoft.Framework.Infra.Data.MongoDb.IoC
 
         ///<inheritdoc/>
         public async Task CreateDatabase()
-            => await Task.WhenAll(_creators.Select(c => c.CreateCollection()));
+            => await Task.WhenAll(_creators.Select(creator => creator.CreateCollection()));
 
         #endregion
 

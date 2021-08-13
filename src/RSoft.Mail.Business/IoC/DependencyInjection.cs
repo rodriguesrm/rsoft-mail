@@ -12,6 +12,7 @@ using RSoft.Mail.Business.Services;
 using SendGrid;
 using System;
 using System.Threading.Tasks;
+using RSoft.Framework.Infra.Data.MongoDb.IoC;
 
 namespace RSoft.Mail.Business.IoC
 {
@@ -55,6 +56,9 @@ namespace RSoft.Mail.Business.IoC
             }
 
             services.AddScoped<IConfigurationBuilder, ConfigurationBuilder>();
+
+            services.AddSingleton<IDatabaseCreator, MongoCollectionCreator>();
+            services.RegisterAllTypes<IDocumentCollectionCreator>(ServiceLifetime.Singleton, typeof(DependencyInjection).Assembly);
 
             return services;
 
