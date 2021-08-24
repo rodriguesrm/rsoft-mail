@@ -45,12 +45,12 @@ namespace RSoft.Mail.Business.Documents
         /// <summary>
         /// E-mail subject
         /// </summary>
-        public string Subject { get; }
+        public string Subject { get; set; }
 
         /// <summary>
         /// E-mail content
         /// </summary>
-        public string Content { get; }
+        public string Content { get; set; }
 
         /// <summary>
         /// List of files to be sent as attached
@@ -60,7 +60,7 @@ namespace RSoft.Mail.Business.Documents
         /// <summary>
         /// Indicates whether the message will be sent in html format
         /// </summary>
-        public bool EnableHtml { get; }
+        public bool EnableHtml { get; set; }
 
         #endregion
 
@@ -75,17 +75,17 @@ namespace RSoft.Mail.Business.Documents
             /// <summary>
             /// Attachment filename
             /// </summary>
-            public string Filename { get; }
+            public string Filename { get; set; }
 
             /// <summary>
             /// Mime type of the content you are attaching. For example, application/pdf
             /// </summary>
-            public string Type { get; }
+            public string Type { get; set; }
 
             /// <summary>
             /// Base64 encoded content of the attachment.
             /// </summary>
-            public string Content { get; }
+            public string Content { get; set; }
 
         }
 
@@ -98,12 +98,12 @@ namespace RSoft.Mail.Business.Documents
             /// <summary>
             /// E-mail address of the sender or recipient
             /// </summary>
-            public string Email { get; }
+            public string Email { get; set; }
 
             /// <summary>
             /// Name of the sender or recipient
             /// </summary>
-            public string Name { get; }
+            public string Name { get; set; }
 
         }
 

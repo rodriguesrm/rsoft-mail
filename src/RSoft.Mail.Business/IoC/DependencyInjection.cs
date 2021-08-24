@@ -37,6 +37,7 @@ namespace RSoft.Mail.Business.IoC
             services.Configure<SenderOptions>(options => configuration.GetSection("Sender").Bind(options));
             services.Configure<CultureOptions>(options => configuration.GetSection("Application:Culture").Bind(options));
 
+            services.AddScoped<IMailDocumentRepository, MailDocumentRepository>();
             services.AddScoped<IMailRepository, MailRepository>();
             services.AddScoped<IMailService, MailService>();
 

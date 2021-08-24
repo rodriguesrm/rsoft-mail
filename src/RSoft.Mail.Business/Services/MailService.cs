@@ -49,14 +49,14 @@ namespace RSoft.Mail.Business.Services
         #region Public methods
 
         ///<inheritdoc/>
-        public Task<(SendMailResult, Guid)> SendMail(IMessage message)
+        public Task<(SendMailResult, string)> SendMail(IMessage message)
             => SendMail(message, null);
 
         ///<inheritdoc/>
-        public async Task<(SendMailResult, Guid)> SendMail(IMessage message, IEmailAddress redirectTo)
+        public async Task<(SendMailResult, string)> SendMail(IMessage message, IEmailAddress redirectTo)
         {
 
-            Guid requestId = await _mailRepository.SaveRequestAsync(message);
+            string requestId = await _mailRepository.SaveRequestAsync(message);
 
             IMessageHandle msgToSend;
             if (_isProduction)

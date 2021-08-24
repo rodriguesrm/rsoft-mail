@@ -64,7 +64,7 @@ namespace RSoft.Mail.Web.Api.Controllers.v1_0
 
             Message message = request.Map();
 
-            (SendMailResult, Guid) result = await _mailService.SendMail(message, redirect);
+            (SendMailResult, string) result = await _mailService.SendMail(message, redirect);
             if (result.Item1.Success)
                 return Ok(result.Item2);
             else
@@ -81,11 +81,11 @@ namespace RSoft.Mail.Web.Api.Controllers.v1_0
         /// </summary>
         /// <param name="request">Request data</param>
         /// <param name="cancellationToken">A System.Threading.CancellationToken to observe while waiting for the task to complete</param>
-        /// <response code="200">Successful request processing</response>
+        /// <response code="200">Successful request processing, return an id string expression as result, example: 612556a31b0ea43c849ef71e</response>
         /// <response code="400">Invalid request, see details in response</response>
         /// <response code="401">Authentication Failed / Access Denied</response>
         /// <response code="500">Request processing failed</response>
-        [ProducesResponseType(typeof(IEnumerable<Guid>), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(string), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(IEnumerable<GenericNotificationResponse>), StatusCodes.Status400BadRequest)]
         [ProducesResponseType(typeof(string), StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(typeof(GerericExceptionResponse), StatusCodes.Status500InternalServerError)]

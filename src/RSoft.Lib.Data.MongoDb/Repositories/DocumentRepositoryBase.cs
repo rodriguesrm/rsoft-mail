@@ -21,6 +21,21 @@ namespace RSoft.Lib.Data.MongoDb.Repositories
 
         #endregion
 
+        #region Constructors
+
+        /// <summary>
+        /// Create a new instance of document repository
+        /// </summary>
+        /// <param name="db">MongoDatabase connection instance</param>
+        /// <param name="collectionName">Collection name</param>
+        public DocumentRepositoryBase(IMongoDatabase db, string collectionName)
+        {
+            _db = db;
+            _collectionName = collectionName;
+        }
+
+        #endregion
+
         #region Abstract methods
 
         /// <summary>

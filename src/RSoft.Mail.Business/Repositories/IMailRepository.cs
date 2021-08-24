@@ -17,6 +17,6 @@ namespace RSoft.Mail.Business.Repositories
         /// </summary>
         /// <param name="message">Message detail</param>
         /// <param name="cancellationToken">A System.Threading.CancellationToken to observe while waiting for the task to complete</param>
-        Task<Guid> SaveRequestAsync(IMessage message, CancellationToken cancellationToken = default);
+        Task<string> SaveRequestAsync(IMessage message, CancellationToken cancellationToken = default);
     }
 }

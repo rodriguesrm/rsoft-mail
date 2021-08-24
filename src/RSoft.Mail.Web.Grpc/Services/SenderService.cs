@@ -5,7 +5,6 @@ using RSoft.Mail.Business.Models;
 using RSoft.Mail.Business.Services;
 using RSoft.Mail.Web.Grpc.Contracts;
 using RSoft.Mail.Web.Grpc.Host.Extensions;
-using System;
 using System.Linq;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
@@ -51,7 +50,7 @@ namespace RSoft.Mail.Web.Grpc.Host
                 redirect = new EmailAddress(request.RedirectTo);
 
             Message message = request.Map();
-            (SendMailResult result, Guid mailId) = await _mailService.SendMail(message, redirect);
+            (SendMailResult result, string mailId) = await _mailService.SendMail(message, redirect);
 
             string errors = string.Empty;
             if (result.Success)
@@ -78,7 +77,7 @@ namespace RSoft.Mail.Web.Grpc.Host
             return new MailSendReply()
             {
                 Success = result.Success,
-                MailId = mailId.ToString(),
+                MailId = mailId,
                 Errors = errors
             };
 

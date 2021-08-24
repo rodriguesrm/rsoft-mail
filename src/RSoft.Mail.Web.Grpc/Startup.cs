@@ -39,7 +39,6 @@ namespace RSoft.Mail.Web.Grpc.Host
         {
             services.AddGrpc();
 
-            //TODO: Check and implement
             services.AddJwtToken(Configuration);
             services.AddMailServices(Configuration);
             services.AddHealthChecks();

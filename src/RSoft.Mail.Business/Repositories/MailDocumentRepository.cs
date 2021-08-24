@@ -8,6 +8,9 @@ namespace RSoft.Mail.Business.Repositories
     {
 
         ///<inheritdoc/>
+        public MailDocumentRepository(IMongoDatabase db) : base(db, nameof(MailDocument)) { }
+
+        ///<inheritdoc/>
         protected override UpdateDefinition<MailDocument> MapToUpdate(MailDocument document)
         {
 
