@@ -1,4 +1,4 @@
-﻿namespace RSoft.Framework.Infra.Data.MongoDb.Options
+﻿namespace RSoft.Lib.Data.MongoDb.Options
 {
 
     /// <summary>

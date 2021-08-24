@@ -1,9 +1,9 @@
 ﻿using MongoDB.Driver;
-using RSoft.Framework.Infra.Data.MongoDb.Documents;
+using RSoft.Lib.Data.MongoDb.Documents;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace RSoft.Framework.Infra.Data.MongoDb.Repositories
+namespace RSoft.Lib.Data.MongoDb.Repositories
 {
     public abstract class DocumentRepositoryBase<TDocument> : IDocumentRepository<TDocument>
         where TDocument : IDocument

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace RSoft.Framework.Infra.Data.MongoDb.Documents
+namespace RSoft.Lib.Data.MongoDb.Documents
 {
 
     /// <summary>

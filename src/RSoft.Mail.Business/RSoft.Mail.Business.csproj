@@ -20,7 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\RSoft.Framework.Infra.Data.MongoDb\RSoft.Framework.Infra.Data.MongoDb.csproj" />
+    <ProjectReference Include="..\RSoft.Lib.Data.MongoDb\RSoft.Lib.Data.MongoDb.csproj" />
     <ProjectReference Include="..\RSoft.Mail.Contract\RSoft.Mail.Contract.csproj" />
   </ItemGroup>
 

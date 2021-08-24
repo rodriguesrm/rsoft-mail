@@ -1,8 +1,8 @@
-﻿using RSoft.Framework.Infra.Data.MongoDb.Documents;
+﻿using RSoft.Lib.Data.MongoDb.Documents;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace RSoft.Framework.Infra.Data.MongoDb.Repositories
+namespace RSoft.Lib.Data.MongoDb.Repositories
 {
 
     /// <summary>

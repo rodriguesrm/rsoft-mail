@@ -1,8 +1,8 @@
-﻿using RSoft.Framework.Infra.Data.MongoDb.Creators;
+﻿using RSoft.Lib.Data.MongoDb.Creators;
 using RSoft.Mail.Business.Documents;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using RSoft.Framework.Infra.Data.MongoDb.Extensions;
+using RSoft.Lib.Data.MongoDb.Extensions;
 using MongoDB.Driver;
 
 namespace RSoft.Mail.Business.Mappings

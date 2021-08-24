@@ -1,9 +1,9 @@
 ﻿using Microsoft.Extensions.Options;
 using MongoDB.Bson.Serialization.Conventions;
 using MongoDB.Driver;
-using RSoft.Framework.Infra.Data.MongoDb.Options;
+using RSoft.Lib.Data.MongoDb.Options;
 
-namespace RSoft.Framework.Infra.Data.MongoDb.IoC
+namespace RSoft.Lib.Data.MongoDb.Abstractions
 {
 
     /// <summary>

@@ -1,9 +1,9 @@
-﻿using RSoft.Framework.Infra.Data.MongoDb.Creators;
+﻿using RSoft.Lib.Data.MongoDb.Creators;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace RSoft.Framework.Infra.Data.MongoDb.IoC
+namespace RSoft.Lib.Data.MongoDb.Abstractions
 {
 
     /// <summary>

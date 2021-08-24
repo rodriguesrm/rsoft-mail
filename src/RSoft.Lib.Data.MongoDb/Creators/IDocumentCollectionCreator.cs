@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 
-namespace RSoft.Framework.Infra.Data.MongoDb.Creators
+namespace RSoft.Lib.Data.MongoDb.Creators
 {
 
     /// <summary>

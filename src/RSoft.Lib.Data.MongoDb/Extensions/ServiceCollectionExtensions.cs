@@ -1,14 +1,13 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using RSoft.Framework.Infra.Data.MongoDb.Creators;
-using RSoft.Framework.Infra.Data.MongoDb.Documents;
-using RSoft.Framework.Infra.Data.MongoDb.IoC;
-using RSoft.Framework.Infra.Data.MongoDb.Options;
+using RSoft.Lib.Data.MongoDb.Abstractions;
+using RSoft.Lib.Data.MongoDb.Creators;
+using RSoft.Lib.Data.MongoDb.Options;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 
-namespace RSoft.Framework.Infra.Data.MongoDb.Extensions
+namespace RSoft.Lib.Data.MongoDb.Extensions
 {
 
     /// <summary>

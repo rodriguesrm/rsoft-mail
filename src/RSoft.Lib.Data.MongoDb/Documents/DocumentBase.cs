@@ -1,7 +1,7 @@
 ﻿using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 
-namespace RSoft.Framework.Infra.Data.MongoDb.Documents
+namespace RSoft.Lib.Data.MongoDb.Documents
 {
 
     public class DocumentBase : IDocument

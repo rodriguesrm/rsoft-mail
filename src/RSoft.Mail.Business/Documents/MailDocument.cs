@@ -1,4 +1,4 @@
-﻿using RSoft.Framework.Infra.Data.MongoDb.Documents;
+﻿using RSoft.Lib.Data.MongoDb.Documents;
 using System;
 using System.Collections.Generic;
 

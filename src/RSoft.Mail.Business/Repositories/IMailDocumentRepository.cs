@@ -1,4 +1,4 @@
-﻿using RSoft.Framework.Infra.Data.MongoDb.Repositories;
+﻿using RSoft.Lib.Data.MongoDb.Repositories;
 using RSoft.Mail.Business.Documents;
 
 namespace RSoft.Mail.Business.Repositories

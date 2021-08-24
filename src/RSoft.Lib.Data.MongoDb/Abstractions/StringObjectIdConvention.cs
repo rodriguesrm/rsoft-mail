@@ -2,7 +2,7 @@
 using MongoDB.Bson.Serialization.Conventions;
 using MongoDB.Bson.Serialization.IdGenerators;
 
-namespace RSoft.Framework.Infra.Data.MongoDb.IoC
+namespace RSoft.Lib.Data.MongoDb.Abstractions
 {
 
     /// <summary>

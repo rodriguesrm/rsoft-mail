@@ -1,7 +1,7 @@
-﻿using RSoft.Framework.Infra.Data.MongoDb.Creators;
+﻿using RSoft.Lib.Data.MongoDb.Creators;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using RSoft.Framework.Infra.Data.MongoDb.Extensions;
+using RSoft.Lib.Data.MongoDb.Extensions;
 using RSoft.Framework.Options;
 using RSoft.Mail.Business.Contracts;
 using RSoft.Mail.Business.Enums;
@@ -12,7 +12,7 @@ using RSoft.Mail.Business.Services;
 using SendGrid;
 using System;
 using System.Threading.Tasks;
-using RSoft.Framework.Infra.Data.MongoDb.IoC;
+using RSoft.Lib.Data.MongoDb.Abstractions;
 
 namespace RSoft.Mail.Business.IoC
 {
