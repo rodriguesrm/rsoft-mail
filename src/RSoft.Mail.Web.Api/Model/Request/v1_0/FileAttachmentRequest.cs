@@ -1,4 +1,4 @@
-﻿using RSoft.Framework.Web.Annotations;
+﻿using RSoft.Lib.Web.Annotations;
 using System.ComponentModel.DataAnnotations;
 
 namespace RSoft.Mail.Web.Api.Model.Request.v1_0
