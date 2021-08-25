@@ -10,22 +10,22 @@
 		<PackageReference Include="Grpc.AspNetCore" Version="2.37.0" />
 		<PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.13" />
 		<PackageReference Include="RSoft.Logs" Version="1.1.0-rc1.6" />
-		<PackageReference Include="RSoft.Framework" Version="1.0.0-rc1.12" />
-		<PackageReference Include="RSoft.Framework.Web" Version="1.0.0-rc1.5" />
+		<PackageReference Include="RSoft.Lib.Common" Version="1.0.0-rc1.2" />
+		<PackageReference Include="RSoft.Lib.Web" Version="1.0.0-rc1.0" />
 		<PackageReference Include="MongoDB.Driver" Version="2.12.3" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\RSoft.Mail.Business\RSoft.Mail.Business.csproj" />
+		<ProjectReference Include="..\RSoft.Mail.Business\RSoft.Mail.Business.csproj" />
 	</ItemGroup>
 
 	<ItemGroup>
 		<None Include="..\Protos">
 			<Link>Protos</Link>
 		</None>
-	  <Protobuf Include="..\Protos\mailsender.proto">
-	    <Link>Protos\mailsender.proto</Link>
-	  </Protobuf>
+		<Protobuf Include="..\Protos\mailsender.proto">
+			<Link>Protos\mailsender.proto</Link>
+		</Protobuf>
 	</ItemGroup>
 
 </Project>

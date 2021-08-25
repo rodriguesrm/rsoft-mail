@@ -1,4 +1,4 @@
-﻿using RSoft.Framework.Web.Annotations;
+﻿using RSoft.Lib.Web.Annotations;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 

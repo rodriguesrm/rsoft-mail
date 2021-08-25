@@ -1,13 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using RSoft.Framework.Web.Api;
-using RSoft.Framework.Web.Model.Response;
+using RSoft.Lib.Common.Models;
+using RSoft.Lib.Common.Web.Api;
 using RSoft.Logs.Model;
 using RSoft.Mail.Business.Models;
 using RSoft.Mail.Business.Services;
@@ -86,7 +85,7 @@ namespace RSoft.Mail.Web.Api.Controllers.v1_0
         /// <response code="401">Authentication Failed / Access Denied</response>
         /// <response code="500">Request processing failed</response>
         [ProducesResponseType(typeof(string), StatusCodes.Status200OK)]
-        [ProducesResponseType(typeof(IEnumerable<GenericNotificationResponse>), StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(typeof(IEnumerable<GenericNotification>), StatusCodes.Status400BadRequest)]
         [ProducesResponseType(typeof(string), StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(typeof(GerericExceptionResponse), StatusCodes.Status500InternalServerError)]
         [HttpPost]

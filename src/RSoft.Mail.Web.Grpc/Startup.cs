@@ -4,7 +4,8 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using RSoft.Framework.Web.Extensions;
+using RSoft.Lib.Common.Web.Extensions;
+using RSoft.Lib.Web.Extensions;
 using RSoft.Mail.Business.IoC;
 using RSoft.Mail.Web.Grpc.Host.Extensions;
 
