@@ -14,13 +14,13 @@
 		<PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="5.0.0" />
 		<PackageReference Include="Microsoft.Extensions.Options" Version="5.0.0" />
 		<PackageReference Include="RSoft.Lib.Common" Version="1.0.0-rc1.2" />
+		<PackageReference Include="RSoft.Lib.Data.MongoDb" Version="1.0.0-rc1.0" />
 		<PackageReference Include="RSoft.Logs" Version="1.1.0-rc1.6" />
 		<PackageReference Include="SendGrid" Version="9.23.2" />
 		<PackageReference Include="MongoDB.Driver" Version="2.12.3" />
 	</ItemGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\RSoft.Lib.Data.MongoDb\RSoft.Lib.Data.MongoDb.csproj" />
 		<ProjectReference Include="..\RSoft.Mail.Contract\RSoft.Mail.Contract.csproj" />
 	</ItemGroup>
 
