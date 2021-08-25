@@ -3,8 +3,12 @@
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
     <UserSecretsId>678223c3-20e5-4816-be82-fb1a70632f1a</UserSecretsId>
-    <Version>1.1.0</Version>
+    <Version>1.1.1</Version>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <Authors>Rodrigo Rodrigues</Authors>
+    <Company>RSoft</Company>
+    <Description>RSoft E-Mail Servi API</Description>
+    <RepositoryUrl>https://github.com/rodriguesrm/rsoft-mail</RepositoryUrl>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
