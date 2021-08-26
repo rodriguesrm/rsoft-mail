@@ -7,7 +7,7 @@
 		<Company>RSoft gRpc Mail Service client package</Company>
 		<Description>RSoft gRpc Mail Service client package</Description>
 		<RepositoryUrl>https://github.com/rodriguesrm/rsoft-mail-service</RepositoryUrl>
-		<Version>1.1.0</Version>
+		<Version>1.2.0</Version>
 		<PackageTags>mail client rsoft grpc rpc</PackageTags>
 		<PackageLicenseFile>license.txt</PackageLicenseFile>
 	</PropertyGroup>
