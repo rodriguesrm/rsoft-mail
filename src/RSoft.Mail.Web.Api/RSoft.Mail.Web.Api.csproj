@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
     <UserSecretsId>678223c3-20e5-4816-be82-fb1a70632f1a</UserSecretsId>
-    <Version>1.1.1</Version>
+    <Version>1.2.1</Version>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     <Authors>Rodrigo Rodrigues</Authors>
     <Company>RSoft</Company>
@@ -23,8 +23,8 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.13" />
-    <PackageReference Include="RSoft.Framework" Version="1.0.0-rc1.12" />
-    <PackageReference Include="RSoft.Framework.Web" Version="1.0.0-rc1.5" />
+    <PackageReference Include="RSoft.Lib.Common" Version="1.0.0" />
+    <PackageReference Include="RSoft.Lib.Web" Version="1.0.0" />
 	<PackageReference Include="MongoDB.Driver" Version="2.12.3" />
   </ItemGroup>
 

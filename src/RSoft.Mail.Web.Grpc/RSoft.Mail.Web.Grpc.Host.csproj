@@ -4,7 +4,7 @@
 		<TargetFramework>net5.0</TargetFramework>
 		<UserSecretsId>007e455d-5116-45cc-a82c-8175c90a3c92</UserSecretsId>
 		<DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
-		<Version>1.1.1</Version>
+		<Version>1.2.1</Version>
 		<Authors>Rodrigo Rodrigues</Authors>
 		<Company>RSoft</Company>
 		<Description>RSoft gRpc Mail Service</Description>
@@ -14,9 +14,9 @@
 	<ItemGroup>
 		<PackageReference Include="Grpc.AspNetCore" Version="2.37.0" />
 		<PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.13" />
-		<PackageReference Include="RSoft.Logs" Version="1.1.0-rc1.6" />
-		<PackageReference Include="RSoft.Lib.Common" Version="1.0.0-rc1.2" />
-		<PackageReference Include="RSoft.Lib.Web" Version="1.0.0-rc1.0" />
+		<PackageReference Include="RSoft.Logs" Version="1.1.0" />
+		<PackageReference Include="RSoft.Lib.Common" Version="1.0.0" />
+		<PackageReference Include="RSoft.Lib.Web" Version="1.0.0" />
 		<PackageReference Include="MongoDB.Driver" Version="2.12.3" />
 	</ItemGroup>
 
