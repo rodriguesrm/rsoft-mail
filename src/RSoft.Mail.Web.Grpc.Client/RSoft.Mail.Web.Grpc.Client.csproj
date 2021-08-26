@@ -4,10 +4,10 @@
 		<TargetFramework>netstandard2.1</TargetFramework>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<Authors>Rodrigo Rodrigues</Authors>
-		<Company>RSoft gRpc Mail Service client package</Company>
+		<Company>RSoft</Company>
 		<Description>RSoft gRpc Mail Service client package</Description>
 		<RepositoryUrl>https://github.com/rodriguesrm/rsoft-mail-service</RepositoryUrl>
-		<Version>1.2.0</Version>
+		<Version>1.2.1</Version>
 		<PackageTags>mail client rsoft grpc rpc</PackageTags>
 		<PackageLicenseFile>license.txt</PackageLicenseFile>
 	</PropertyGroup>
