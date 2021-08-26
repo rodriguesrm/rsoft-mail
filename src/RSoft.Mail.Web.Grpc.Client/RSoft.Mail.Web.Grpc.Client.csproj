@@ -6,7 +6,7 @@
 		<Authors>Rodrigo Rodrigues</Authors>
 		<Company>RSoft</Company>
 		<Description>RSoft gRpc Mail Service client package</Description>
-		<RepositoryUrl>https://github.com/rodriguesrm/rsoft-mail-service</RepositoryUrl>
+		<RepositoryUrl>https://github.com/rodriguesrm/rsoft-mail</RepositoryUrl>
 		<Version>1.2.1</Version>
 		<PackageTags>mail client rsoft grpc rpc</PackageTags>
 		<PackageLicenseFile>license.txt</PackageLicenseFile>
