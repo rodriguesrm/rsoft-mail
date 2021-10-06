@@ -7,15 +7,15 @@
 		<Company>RSoft</Company>
 		<Description>RSoft gRpc Mail Service client package</Description>
 		<RepositoryUrl>https://github.com/rodriguesrm/rsoft-mail</RepositoryUrl>
-		<Version>1.2.1</Version>
+		<Version>1.3.0</Version>
 		<PackageTags>mail client rsoft grpc rpc</PackageTags>
 		<PackageLicenseFile>license.txt</PackageLicenseFile>
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Google.Protobuf" Version="3.17.2" />
-		<PackageReference Include="Grpc.Net.Client" Version="2.37.0" />
-		<PackageReference Include="Grpc.Tools" Version="2.38.0">
+		<PackageReference Include="Google.Protobuf" Version="3.18.1" />
+		<PackageReference Include="Grpc.Net.Client" Version="2.40.0" />
+		<PackageReference Include="Grpc.Tools" Version="2.41.0">
 			<PrivateAssets>all</PrivateAssets>
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 		</PackageReference>
