@@ -10,6 +10,7 @@ WORKDIR /src
 COPY ["RSoft.Mail.Web.Grpc/RSoft.Mail.Web.Grpc.Host.csproj", "RSoft.Mail.Web.Grpc/"]
 COPY ["RSoft.Mail.Business/RSoft.Mail.Business.csproj", "RSoft.Mail.Business/"]
 COPY ["RSoft.Mail.Contract/RSoft.Mail.Contract.csproj", "RSoft.Mail.Contract/"]
+COPY [".nuget/nuget.config", ""]
 RUN dotnet restore "RSoft.Mail.Web.Grpc/RSoft.Mail.Web.Grpc.Host.csproj"
 COPY . .
 WORKDIR "/src/RSoft.Mail.Web.Grpc"
